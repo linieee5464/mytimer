@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNote"
+    android:background="#FFC4E0"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tittle_note"
+        android:background="#F5030243"
+        android:textColor="#FFC4E0"
+        android:fontFamily="@font/lobster"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingHorizontal="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="14"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titlenote"
+            android:gravity="center_vertical"
+            android:id="@+id/tittle_note"
+            android:textColor="#F5030243"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:paddingLeft="10dp"
+            android:hint="@string/type_here"
+            android:inputType="text"
+            android:id="@+id/note_title"
+            android:textColor="#F5030243"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Note"
+            android:id="@+id/note"
+            android:textColor="#F5030243"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/border"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="10dp"
+            android:hint="@string/type_here"
+            android:id="@+id/note_body"
+            android:layout_below="@+id/note"
+            android:gravity="top"
+            android:inputType="text"
+            android:textColor="#F5030243"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingHorizontal="10dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="#F5030243"
+                android:fontFamily="@font/lobster"
+                android:onClick="saveNote"
+                android:text="SAVE"
+                android:textColor="#FFC4E0"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_bar"
+        app:menu="@menu/menu"
+        android:background="@drawable/bottomnav_shape"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</LinearLayout>

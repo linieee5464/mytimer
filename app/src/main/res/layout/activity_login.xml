@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFC4E0"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/register_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/register">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_logo"
+            android:fontFamily="@font/lobster"
+            android:text="@string/text_login"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:id="@+id/text_login">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/login_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_login"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_signin_google"
+            android:tint="#00FFFFFF">
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_google"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_logo_fb"
+            android:tint="#00FFFFFF">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_bar"
+
+        app:menu="@menu/menu"
+        android:background="@drawable/bottomnav_shape"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

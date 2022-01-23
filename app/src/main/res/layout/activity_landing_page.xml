@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cslo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="#F5030243"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/nameApp_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/lobster"
+            android:text="@string/name_app"
+            android:textColor="#FFC4E0"
+            android:textSize="110sp" />
+
+        <TextView
+            android:id="@+id/nameApp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/lobster"
+            android:text="@string/name_app_2"
+            android:textColor="#FFC4E0"
+            android:textSize="110sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rllo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lobster"
+            android:text="@string/question"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ques"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:padding="5dp">
+
+
+            <ImageButton
+                android:id="@+id/ibtn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginEnd="100dp"
+                android:layout_toEndOf="@+id/ques"
+                android:background="@null"
+                android:onClick="btn_ok"
+                android:src="@drawable/icon_ok_40"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/ibtn_ok"
+                android:background="@drawable/shape_ok"
+                android:fontFamily="@font/lobster"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/ok"
+                android:textAlignment="center"
+                android:textColor="#F702073A"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

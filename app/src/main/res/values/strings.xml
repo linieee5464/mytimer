@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MyTimer</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="timer">00:00</string>
+    <string name="image_button">image_button</string>
+    <string name="name_app">My</string>
+    <string name="name_app_2">Timer</string>
+
+    <string name="repeat">Repeat</string>
+    <string name="input_times">Enter Times</string>
+    <string name="tv_rest">Rest Time </string>
+    <string name="input_sec">00</string>
+    <string name="tv_dot">:</string>
+    <string name="cardio">Cardio is a physical exercise that increases the rate at which your heart works\nRecommendation: 2 minutes/ set\n
+    Would you like to preset the timer?</string>
+    <string name="cardio_min">02</string>
+    <string name="cardio_sec">00</string>
+
+    <string name="strengthen">This exercise will strengthen the muscles in your body.\nRecommendation: 2 minutes/ set\n
+    Would you like to preset the timer?</string>
+    <string name="str_min">01</string>
+    <string name="str_sec">30</string>
+    <string name="tv_login">LOGIN</string>
+    <string name="signin">\t\tSign in with Gmail</string>
+    <string-array name="spnTypes_workout">
+        <item>Cardio</item>
+
+        <item>Strengthen</item>
+
+    </string-array>
+    <string name="mynote">My Note</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_note">Note</string>
+    <string name="menu_preset">Preset</string>
+    <string name="menu_stat">Statistics</string>
+    <string name="toast_content">Want some exercises \n for you</string>
+    <string name="question">Are you ready for workout today?</string>
+    <string name="selectType">Select Type:</string>
+    <string name="song">Music</string>
+    <string name="title">Cardio</string>
+    <string name="subtitle">1 minute / set | 15s / rest</string>
+    <string name="title_description">Best to do 3-5 sets</string>
+    <string name="tittle_note">Notepad</string>
+    <string name="titlenote">Title</string>
+    <string name="type_here">Type here...</string>
+    <string name="ok">OK?</string>
+
+    <string name="continue_wi">Continue with Google</string>
+    <string name="text_login">Login to your account to note down and set up reminder.</string>
+</resources>

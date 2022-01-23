@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Material.Light.Dialog.MinWidth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingVertical="100dp"
+    android:background="@drawable/shape"
+
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_calo"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lobster"
+        android:textColor="#F702073A"
+        android:text="You burnt "
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00"
+
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/txv_calo"
+        android:textSize="70sp"
+        android:fontFamily="@font/lobster"
+        android:textColor="#F702073A"
+        android:id="@+id/amount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+
+
+        android:fontFamily="@font/lobster"
+        android:text="calories"
+
+
+        android:textColor="#F702073A"
+        android:textSize="40sp" />
+
+
+</RelativeLayout>

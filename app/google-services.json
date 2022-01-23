@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "339367264237",
+    "firebase_url": "https://exercise-26cd0.firebaseio.com",
+    "project_id": "exercise-26cd0",
+    "storage_bucket": "exercise-26cd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339367264237:android:5a9a23662868c8be1f71e4",
+        "android_client_info": {
+          "package_name": "com.example.mytimer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339367264237-2mr3jio73am6mop0g9i0bpplb1u8fhhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSgzmT1Cetqsjx5HVQIEe8lT2Lm8N0bmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339367264237-2mr3jio73am6mop0g9i0bpplb1u8fhhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

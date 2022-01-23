@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/ic_home_24"
+
+        />
+    <item
+        android:id="@+id/menu_stat"
+        android:title="@string/menu_stat"
+        android:icon="@drawable/ic_statistics_24"
+        />
+    <item
+        android:id="@+id/menu_preset"
+        android:title="@string/menu_preset"
+        android:icon="@drawable/ic_list_24"
+        />
+    <item
+        android:id="@+id/menu_note"
+        android:title="@string/menu_note"
+        android:icon="@drawable/ic_note"
+        />
+</menu>
