@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="2dp"
+
+   >
+
+    <RelativeLayout
+        android:id="@+id/lo_listnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_note"
+        android:layout_gravity="center"
+        android:paddingVertical="7dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_notename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Note Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/ibtn_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_notename"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_re">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/ibtn_remind"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Latest"
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_notename"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_slab"
+            android:hint="@string/lorem"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

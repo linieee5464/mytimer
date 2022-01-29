@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFC4E0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@drawable/bg_pro"
+        >
+
+        <ImageButton
+            android:id="@+id/pic_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/pic_pro"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pic_pro"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="Liniee"
+            android:textAlignment="center"
+            android:textColor="#FFC4E0"
+            android:textSize="24sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_ednote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="Notes"
+            android:textColor="#F202073A"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_toRightOf="@+id/txt_ednote"
+            android:backgroundTint="#00FFFFFF"
+            android:minHeight="48dp"
+            android:src="@drawable/search"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listnote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/floatingActionButton"
+            tools:listitem="@layout/listview_note"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="#00FFFFFF"
+            app:borderWidth="1dp"
+            app:fabCustomSize="55dp"
+            app:maxImageSize="70dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_bar"
+        android:background="@drawable/bottomnav_shape"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</LinearLayout>

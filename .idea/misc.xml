@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/blackborderbox.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/border.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/border_note.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/bottomnav_shape.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/bottompurpleroundbox.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/btn_login_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/btn_save.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/google.xml" value="0.21837606837606838" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/google_logo.xml" value="0.21837606837606838" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/gradient.xml" value="0.26614583333333336" />
@@ -17,27 +21,39 @@
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/ic_music.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/ic_note.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/ic_signin_google.xml" value="0.21837606837606838" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/item_note.xml" value="0.1680921052631579" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/months.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/round_thumb.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/round_track.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/shape.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/shape_ok.xml" value="0.21837606837606838" />
-        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_add_note.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/stat.xml" value="0.1680921052631579" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/toppurpleroundbox.xml" value="0.1680921052631579" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/drawable/years.xml" value="0.1680921052631579" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_add_note.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_help.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_landing_page.xml" value="0.4" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_preset.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_profile.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_profile_listnote.xml" value="0.176" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_search.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/activity_statistics.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/carview_row.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/custom_spinner_dropdown.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/custom_spinner_item.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/custom_toast.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/listview_item.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/listview_note.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/login_dialog.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/popup_dialog.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/layout/timeinput_dialog.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/1759021/source/app/src/main/res/menu/menu.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

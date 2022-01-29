@@ -46,6 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txv_repeat"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:background="@null"
                 android:fontFamily="@font/lobster"
@@ -54,10 +55,9 @@
                 android:padding="5dp"
                 android:textAlignment="center"
                 android:textColor="#F3F6C0DC"
+
+
                 android:textColorHint="#88FAF9F9"
-
-
-                android:layout_centerHorizontal="true"
                 android:textSize="25sp" />
 
 
@@ -96,42 +96,42 @@
                     android:id="@+id/edt_restTimeMin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
 
 
                     android:fontFamily="@font/lobster"
                     android:hint="@string/input_sec"
                     android:inputType="time"
+                    android:padding="5dp"
                     android:textAlignment="center"
                     android:textColor="#F3F6C0DC"
                     android:textColorHint="#88FAF9F9"
-                    android:textSize="25sp"
-                    android:layout_marginTop="5dp"/>
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/txv_dot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
                     android:layout_toEndOf="@+id/edt_restTimeMin"
                     android:fontFamily="@font/lobster"
+                    android:padding="5dp"
                     android:text="@string/tv_dot"
                     android:textAlignment="center"
                     android:textColor="#f2b5d4"
-                    android:textSize="25sp"
-                    android:layout_marginTop="5dp"/>
+                    android:textSize="25sp" />
 
                 <EditText
                     android:id="@+id/edt_restTimeSec"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/txv_dot"
                     android:layout_marginTop="5dp"
-                    android:padding="5dp"
-
+                    android:layout_toEndOf="@+id/txv_dot"
                     android:fontFamily="@font/lobster"
+
                     android:hint="@string/input_sec"
                     android:inputType="time"
+                    android:padding="5dp"
                     android:textAlignment="center"
                     android:textColor="#F3F6C0DC"
                     android:textColorHint="#88FAF9F9"

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FDC3E1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STATISTICS"
+        android:background="#F5030243"
+        android:textColor="#FFC4E0"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/stat"
+        >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ibtn_byweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/week">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ibtn_bymonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ibtn_byweek"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/months">
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ibtn_bymonth"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/years">
+
+        </ImageButton>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="60dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/lo_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_thunder">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/edt_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_days"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:background="null"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="0"
+                android:textColor="#FFFAB4"
+                android:textSize="40sp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_days"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto_slab"
+                android:text="Days"
+                android:textSize="20sp"
+
+                >
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lo_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:layout_toRightOf="@+id/lo_days"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_chronograph">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/edt_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_times"
+                android:layout_centerHorizontal="true"
+                android:background="null"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="00 : 00"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="#6B84E5"
+                android:textSize="40sp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_times"
+                android:layout_centerHorizontal="true"
+                android:text="Workout Time"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_slab"
+
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_bar"
+        app:menu="@menu/menu"
+        android:background="@drawable/bottomnav_shape"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</LinearLayout>

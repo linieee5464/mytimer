@@ -47,4 +47,5 @@
 
     <string name="continue_wi">Continue with Google</string>
     <string name="text_login">Login to your account to note down and set up reminder.</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur</string>
 </resources>

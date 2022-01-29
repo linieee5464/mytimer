@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FDC3E1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRESET"
+
+        android:background="#F5030243"
+        android:textColor="#FFC4E0"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/stat"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose time (mins) you want to do"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:id="@+id/lo_730">
+
+           <ImageButton
+               android:id="@+id/btn_7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:backgroundTint="#00FFFFFF"
+               android:src="@drawable/ic_7">
+
+           </ImageButton>
+
+           <ImageButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/btn_7"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/ic_30"
+               android:backgroundTint="#00FFFFFF">
+
+           </ImageButton>
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:id="@+id/btn_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_15">
+
+            </ImageButton>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_15"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_45"
+                android:backgroundTint="#00FFFFFF">
+
+            </ImageButton>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_bar"
+        app:menu="@menu/menu"
+        android:background="@drawable/bottomnav_shape"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</LinearLayout>

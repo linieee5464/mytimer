@@ -9,38 +9,59 @@
     tools:context=".AddNote"
     android:background="#FFC4E0"
     >
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/tittle_note"
         android:background="#F5030243"
-        android:textColor="#FFC4E0"
-        android:fontFamily="@font/lobster"
-        android:layout_gravity="center_vertical"
-        android:gravity="center_vertical"
-        android:textSize="20sp"
-        android:paddingHorizontal="20dp"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="14"
-        android:orientation="vertical"
-        android:paddingHorizontal="10dp"
-        android:layout_gravity="center_vertical"
+        android:gravity="left"
         >
+
+        <ImageButton
+            android:id="@+id/ibtn_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_arrowback"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="NOTEPAD"
+            android:layout_toRightOf="@+id/ibtn_arrow"
+            android:layout_centerVertical="true"
+            android:background="#F5030243"
+            android:textColor="#FFC4E0"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/titlenote"
             android:gravity="center_vertical"
             android:id="@+id/tittle_note"
             android:textColor="#F5030243"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_slab"
             android:textSize="15sp"
             />
 
@@ -48,22 +69,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/border"
+            android:background="@drawable/border_note"
             android:paddingLeft="10dp"
             android:hint="@string/type_here"
             android:inputType="text"
             android:id="@+id/note_title"
             android:textColor="#F5030243"
-            android:fontFamily="@font/roboto_medium"/>
+            android:fontFamily="@font/roboto_slab"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
             android:text="Note"
             android:id="@+id/note"
             android:textColor="#F5030243"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_slab"
             android:textSize="15sp"
             android:gravity="center_vertical"
             />
@@ -72,36 +93,126 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:background="@drawable/border"
-            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/border_note"
+            android:fontFamily="@font/roboto_slab"
             android:padding="10dp"
             android:hint="@string/type_here"
             android:id="@+id/note_body"
             android:layout_below="@+id/note"
             android:gravity="top"
             android:inputType="text"
-            android:textColor="#F5030243"/>
+            android:textColor="#F5030243">
+
+        </EditText>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:paddingHorizontal="10dp"
+
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/ibtn_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="null"
+
+                android:fontFamily="@font/roboto_slab"
+                android:src="@drawable/ic_location"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/ibtn_cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="290dp"
+                android:layout_toRightOf="@+id/ibtn_location"
+                android:background="null"
+                android:fontFamily="@font/roboto_slab"
+                android:src="@drawable/ic_cam"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </ImageButton>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ibtn_cam"
+                android:background="null"
+                android:fontFamily="@font/roboto_slab"
+                android:src="@drawable/ic_uppic"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </ImageButton>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lo_reminder"
+            android:layout_gravity="center_horizontal"
+
             >
+
+            <TextView
+                android:id="@+id/tv_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab"
+                android:gravity="center_vertical"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:text="Set reminder"
+                android:textColor="#0D037C"
+                android:textSize="17sp">
+
+            </TextView>
+
+            <Switch
+                android:id="@+id/switch_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+
+                android:layout_toRightOf="@+id/tv_reminder"
+                android:checked="false"
+                android:focusable="true"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                tools:checked="false"
+                tools:ignore="TouchTargetSizeCheck">
+
+            </Switch>
+
+
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
-                android:background="#F5030243"
-                android:fontFamily="@font/lobster"
+                android:layout_below="@+id/switch_reminder"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/btn_save"
+                android:fontFamily="@font/roboto_slab_bold"
+
                 android:onClick="saveNote"
                 android:text="SAVE"
                 android:textColor="#FFC4E0"
-                android:textSize="15sp" />
+                android:textSize="15sp">
+
+            </Button>
+
 
         </RelativeLayout>
+
     </LinearLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -112,6 +223,7 @@
         app:itemTextColor="@color/nav_color"
         >
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 
 
 </LinearLayout>
