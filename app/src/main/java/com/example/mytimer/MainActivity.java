@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         timerMin.setText(intent.getStringExtra("min"));
         timerSec.setText(intent.getStringExtra("sec"));
         exerciseType = intent.getStringExtra("type");
-        mediaPlayer = MediaPlayer.create(this, R.raw.song);
+
         mAuth = FirebaseAuth.getInstance();
         cycle = 1;
     }
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                     case R.id.menu_preset:{
-                        showExercise();
+
                         return true;
                     }
                     case R.id.menu_note:{
@@ -381,12 +381,12 @@ public class MainActivity extends AppCompatActivity {
         });
         dialog.show();
     }
-    /*Jump to exercise list view*/
+    /*Jump to exercise list view
     public void showExercise(){
         Intent intent = new Intent(MainActivity.this, HelpActivity.class);
         intent.putExtra("type", exerciseType.toLowerCase());
         startActivity(intent);
-    }
+    }*/
 
     public void createNotificationChannel(){
         notiManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
@@ -452,19 +452,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Intent intent = new Intent(getApplicationContext(),profile.class);
-                            intent.putExtra("type", exerciseType.toLowerCase());
-                            startActivity(intent);
+                            //Intent intent = new Intent(getApplicationContext()..class);
+                            //intent.putExtra("type", exerciseType.toLowerCase());
+                            //startActivity(intent);
                         } else {
                             Toast.makeText(MainActivity.this, "Sorry auth failed.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
     }
-    /*When the activity is stopped, release the MediaPlayer resource*/
-    @Override
-    protected void onStop() {
-        super.onStop();
-        songPlayer.stopPlayer();
-    }
+
 }

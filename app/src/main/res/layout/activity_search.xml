@@ -70,7 +70,9 @@
             android:backgroundTint="#00FFFFFF"
             android:maxWidth="18dp"
             android:maxHeight="18dp"
-            android:src="@drawable/close"></ImageButton>
+            android:src="@drawable/close">
+
+        </ImageButton>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

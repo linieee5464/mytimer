@@ -1,8 +1,11 @@
+/*
 package com.example.mytimer;
 
 import java.util.HashMap;
 import java.util.Map;
-/*Helper class to hold mapping between exercise ID on FireBase and image name in local app*/
+*/
+/*Helper class to hold mapping between exercise ID on FireBase and image name in local app
+
 public class ExerciseInfo {
     private String name = "";
     private String length = "";
@@ -59,3 +62,4 @@ public class ExerciseInfo {
         return idImageMapping;
     }
 }
+*/

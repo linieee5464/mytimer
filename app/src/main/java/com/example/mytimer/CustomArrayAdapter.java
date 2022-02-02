@@ -1,3 +1,4 @@
+/*
 package com.example.mytimer;
 
 import android.content.Context;
@@ -11,9 +12,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
-/* Customised ArrayAdapter class to populate the list view*/
-/* Inherit the ArrayAdapter class*/
-/* Inheritance, polymorphism, encapsulation*/
+*/
+/* Customised ArrayAdapter class to populate the list view*//*
+
+*/
+/* Inherit the ArrayAdapter class*//*
+
+*/
+/* Inheritance, polymorphism, encapsulation*//*
+
 public class CustomArrayAdapter extends ArrayAdapter<Exercise> {
     private Context context;
     private int layoutID;
@@ -53,3 +60,4 @@ public class CustomArrayAdapter extends ArrayAdapter<Exercise> {
         return convertView;
     }
 }
+*/

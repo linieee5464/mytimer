@@ -43,7 +43,6 @@ public class AddNote extends AppCompatActivity {
     public void setupView(){
         note_title = findViewById(R.id.note_title);
         note_body = findViewById(R.id.note_body);
-        mediaPlayer = MediaPlayer.create(this, R.raw.song);
         Intent intent = getIntent();
         userName = intent.getStringExtra("user");
         exerciseType = intent.getStringExtra("type");
@@ -81,7 +80,7 @@ public class AddNote extends AppCompatActivity {
                         }
                     }
                     case R.id.menu_preset:{
-                        showExercise();
+
                         return true;
                     }
                     case R.id.menu_home:{
@@ -102,9 +101,9 @@ public class AddNote extends AppCompatActivity {
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 170);
         toast.show();
-    }
+    }}
 
-    public void showExercise(){
+/*    /*public void showExercise(){
         Intent intent = new Intent(AddNote.this, HelpActivity.class);
         intent.putExtra("type", exerciseType.toLowerCase());
         startActivity(intent);
@@ -115,4 +114,4 @@ public class AddNote extends AppCompatActivity {
         super.onStop();
         songPlayer.stopPlayer();
     }
-}
+}*/

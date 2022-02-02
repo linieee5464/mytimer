@@ -1,3 +1,4 @@
+/*
 package com.example.mytimer;
 
 import androidx.annotation.NonNull;
@@ -65,7 +66,9 @@ public class HelpActivity extends AppCompatActivity {
         loadViewInBackGround();
         setUpMenu();
     }
-    /*Use Async Task to fetch data from FireBase to populate listview*/
+    */
+/*Use Async Task to fetch data from FireBase to populate listview
+
     class SimpleAsyncTask2 extends AsyncTask<Void, Exercise, Void> {
         CustomArrayAdapter adapt_Ref;
         DatabaseReference dbRef;
@@ -75,7 +78,9 @@ public class HelpActivity extends AppCompatActivity {
             adapt_Ref = (CustomArrayAdapter) lv_exercises.getAdapter();
             dbRef = FirebaseDatabase.getInstance().getReference(chosenExercise.getName());
         }
-        /*Main code, called when detect any child node*/
+        */
+/*Main code, called when detect any child node*//*
+
         @Override
         protected Void doInBackground(Void... voids) {
             dbRef.addChildEventListener(new ChildEventListener() {
@@ -98,13 +103,17 @@ public class HelpActivity extends AppCompatActivity {
             });
             return null;
         }
-        /*Update list item*/
+        */
+/*Update list item*//*
+
         @Override
         protected void onProgressUpdate(Exercise... values){
             adapt_Ref.add(values[0]);
         }
     }
-    /*Init the view*/
+    */
+/*Init the view*//*
+
     public void initView(){
         title_view = findViewById(R.id.ex_title);
         length_view = findViewById(R.id.ex_length);
@@ -121,11 +130,15 @@ public class HelpActivity extends AppCompatActivity {
         lv_exercises.setAdapter(adapter);
         mAuth = FirebaseAuth.getInstance();
     }
-    /*Run the AsyncTask*/
+    */
+/*Run the AsyncTask*//*
+
     public void loadViewInBackGround(){
         new SimpleAsyncTask2().execute();
     }
-    /*Setup bottom navigation bar*/
+    */
+/*Setup bottom navigation bar*//*
+
     public void setUpMenu(){
         navView = findViewById(R.id.menu_bar);
         navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -156,7 +169,9 @@ public class HelpActivity extends AppCompatActivity {
             }
         });
     }
-    /*The code below is implemented the same to MainActivity*/
+    */
+/*The code below is implemented the same to MainActivity*//*
+
     public void startInfoToast(String message){
         Toast toast = new Toast(getApplicationContext());
         View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
@@ -237,4 +252,4 @@ public class HelpActivity extends AppCompatActivity {
         super.onStop();
         songPlayer.stopPlayer();
     }
-}
+}*/

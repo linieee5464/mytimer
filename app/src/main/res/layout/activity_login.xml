@@ -44,7 +44,7 @@
             android:layout_below="@+id/text_login"
             android:backgroundTint="#00FFFFFF"
             android:src="@drawable/ic_signin_google"
-            android:tint="#00FFFFFF">
+            >
 
         </ImageButton>
 
@@ -54,7 +54,7 @@
             android:layout_below="@+id/login_google"
             android:backgroundTint="#00FFFFFF"
             android:src="@drawable/ic_logo_fb"
-            android:tint="#00FFFFFF">
+            >
 
         </ImageButton>
 
